@@ -1,6 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
     const clockElement = document.getElementById('clock');
-    
+    const menuIcon = document.getElementById('menu-icone');
+    const menu = document.getElementById('menu');
+
+    menuIcon.addEventListener('click', () => {
+        menu.classList.toggle('open');
+    });
 
     async function fetchTime() {
         try {

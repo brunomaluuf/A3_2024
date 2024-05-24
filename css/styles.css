@@ -1,0 +1,108 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: url('../assets/pesos.jpg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(51, 51, 51, 0.8);
+    padding: 5px;
+    position: relative;
+}
+
+.menu-icone {
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background-color: rgba(51, 51, 51, 0.9);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.menu.open {
+    display: block;
+  
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 10px 0;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+/* Relógio */
+.clock {
+    color: white;
+    font-size: 1rem;
+    order: 2;
+    margin-left: auto;
+}
+
+/* Logo */
+.logo {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    order: 3;
+    padding: 0;
+}
+
+/* Links à direita */
+.nav-links-right {
+    color: solid white;
+
+    display: block;
+
+    order: 4;
+
+    margin-top: auto !important; 
+    
+    text-align: center;
+
+    padding-top: 17px;
+}
+
+.logoff-link {
+    color: white;
+   
+}
+
+/* Footer */
+.footer {
+    background-color: rgba(51, 51, 51, 0.8);
+    color: white;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
