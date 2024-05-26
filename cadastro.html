@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gymtoday</title>
+    <link rel="stylesheet" href="./css/cadastrostyle.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="./scripts/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="menu-icone" id="menu-icone">
+            &#9776;
+        </div>
+        <div class="logo">GymToday</div>
+        <div class="menu" id="menu">
+            <ul class="nav-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="#treinos">Treinos</a></li>
+                <li><a href="#aulas">Aulas</a></li>
+                <li><a href="cadastro.html">Cadastro de Aluno</a></li>
+            </ul>
+        </div>
+        <ul class="nav-links-right">
+            <a href="login.html" class="logoff-link">Sair</a>
+        </ul>
+        <div id="clock" class="clock"></div>
+    </nav>
+
+    <div class="content">
+        <div class="wrapper">
+            <div class="title-text">
+                <div class="title-login">Cadastro de Aluno</div>
+            </div>
+            <div class="form-container">
+                <div class="form-inner">
+                    <form action="#" class="cadastro">
+                        <div class="pass-link"><a>Nome Completo</a></div>
+                        <div class="field" id="name">
+                            <input type="text" placeholder="Ex: Bruno Maluf" required>
+                        </div>
+                        <div class="pass-link"><a>Insira o CPF</a></div>
+                        <div class="field" id="cpf-field">
+                            <input type="text" id="cpf" placeholder="Ex: 123.456.789-00" required>
+                        </div>
+                        <div class="pass-link"><a>Insira o RG</a></div>
+                        <div class="field" id="rg-field">
+                            <input type="text" id="rg" placeholder="Ex: 12.345.678-90" required>
+                        </div>
+                        <div class="pass-link"><a>Data de Nascimento</a></div>
+                        <div class="field" id="born-date">
+                            <input type="date" placeholder="DD/MM/AAAA" required>
+                        </div>
+                        <div class="pass-link"><a>Endereço</a></div>
+                        <div class="field" id="address-field">
+                            <input type="text" placeholder="Ex: Rua Guararapes 123" required>
+                        </div>
+                        <div class="field btn">
+                            <div class="btn-layer"></div>
+                            <input type="submit" value="Cadastrar" ><!--onclick="cadastrar()"-->
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer mt-auto py-3">
+        <div class="container">
+            <span class="text-muted">Feito por Bruno Maluf, Gabriel Pinheiro e Samuel Nabosne</span>
+        </div>
+    </footer>
+</body>
+</html>
